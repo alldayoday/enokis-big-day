@@ -95,3 +95,12 @@ function death(){
   chooseTwo.setAttribute('hidden','true')
 }
 
+function fightVandal(){
+  photo.innerHTML = `<img src="./assets/page8.gif" />`
+  result.innerHTML = `You pull out your magical sword of butt-whooping and knock the thieves out in one fell swoop`
+  ques.innerHTML = `You loot their bodies and find enough gold to keep you fed until the next quest`
+  chooseOne.setAttribute('hidden','true')
+  chooseTwo.setAttribute('hidden','true')
+}
+
+
