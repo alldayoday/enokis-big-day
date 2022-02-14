@@ -103,4 +103,10 @@ function fightVandal(){
   chooseTwo.setAttribute('hidden','true')
 }
 
-
+function shame(){
+  photo.innerHTML = `<img src="./assets/page9.gif" />`
+  result.innerHTML = `You flee the thieves and make it home. You may not have been brave today but you are alive.`
+  ques.innerHTML = `You'll forever carry with you the shame of knowing you are less `
+  chooseOne.setAttribute('hidden','true')
+  chooseTwo.setAttribute('hidden','true')
+}
