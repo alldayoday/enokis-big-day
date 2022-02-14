@@ -71,7 +71,7 @@ function fightDragon(){
 
 function vandal(){
   photo.innerHTML = `<img src="./assets/page5.gif" />`
-  result.innerHTML = `You exit the tavern ready to head back home when three warlocks jump out at you from behind a cabin`
+  result.innerHTML = `You exit the tavern ready to head back home when three warlocks jump out at you from behind a cabin and demand you give them everything in your pockets`
   ques.innerHTML = `Do you fight the thieves or flee?`
   chooseOne.innerHTML = `Fight`
   chooseTwo.innerHTML = `Flee`
@@ -88,7 +88,7 @@ function defeatDragon(){
 
 function death(){
   photo.innerHTML = `<img src="./assets/page6.gif" />`
-  result.innerHTML = `You approach the dragon, wielding you mighty and magical blade. You find yourself in close range before you notice the dragon's fire breath engulf you in flame`
+  result.innerHTML = `You approach the dragon, wielding your mighty and magical blade. You find yourself in close range before you notice the dragon's fire breath engulf you in flame`
   ques.innerHTML = `It looks like roasted mushrooms are on the menu tonight`
   chooseOne.setAttribute('hidden','true')
   chooseTwo.setAttribute('hidden','true')
@@ -105,7 +105,7 @@ function fightVandal(){
 function shame(){
   photo.innerHTML = `<img src="./assets/page9.gif" />`
   result.innerHTML = `You flee the thieves and make it home. You may not have been brave today but you are alive.`
-  ques.innerHTML = `You'll forever carry with you the shame of knowing you are less `
+  ques.innerHTML = `You'll forever carry with you the shame of knowing you are less brave than your ancestors`
   chooseOne.setAttribute('hidden','true')
   chooseTwo.setAttribute('hidden','true')
 }

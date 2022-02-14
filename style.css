@@ -4,6 +4,7 @@ body {
 }
 h1 {
   text-align: center;
+  font-size: 1.2rem;
 }
 .container {  
   display: grid;
@@ -17,8 +18,8 @@ h1 {
     "img img"
     "promptQuestion promptQuestion"
     "yesBut noBut";
-  width: 70%;
-  height: 50vh;
+  width: 80%;
+  height: auto;
   margin: auto;
   text-align: center;
 }
@@ -26,27 +27,35 @@ h1 {
 .pageChoice { 
   grid-area: pageChoice; 
   margin-top: 10px;
+  font-size: 1.5rem;
 }
 
 img { 
   grid-area: img; 
   height: auto;
-  width: 170%;
-  margin-left: 20%;
+  width: 120%;
+  margin-left: 42%;
+  margin-top: 10px;
 }
 
 .promptQuestion { 
   grid-area: promptQuestion; 
+  font-size: 1.5rem;
+  margin: 0;
 }
 
 .yesBut { 
   grid-area: yesBut; 
   width: 100px;
   justify-self:right;
+  font-size: 1rem;
+  margin: 0;
 }
 
 .noBut { 
   grid-area: noBut; 
   width: 100px;
   justify-self:left;
+  font-size: 1rem;
+  margin: 0;
 }
