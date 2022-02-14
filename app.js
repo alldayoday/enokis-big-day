@@ -130,3 +130,5 @@ function shame(){
   chooseTwo.setAttribute('hidden','true')
   addClasses()
 }
+
+
