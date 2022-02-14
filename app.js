@@ -20,12 +20,16 @@ function init(){
   result.setAttribute('class',' pageChoice animate__animated animate__backInLeft')
   ques.setAttribute('class', 'promptQuestion animate__animated animate__backInRight')
   setTimeout(removeClasses, 1000)
+  chooseOne.setAttribute('class','yesBut animate__animated animate__bounce')
+  chooseTwo.setAttribute('class','noBut animate__animated animate__bounce')
 }
 
 
 function removeClasses(){
   result.setAttribute('class','pageChoice')
   ques.setAttribute('class','promptQuestion')
+  chooseOne.setAttribute('class','yesBut')
+  chooseTwo.setAttribute('class','noBut')
 }
 
 function directOne(){
@@ -62,6 +66,8 @@ function quest(){
   result.setAttribute('class',' pageChoice animate__animated animate__backInLeft')
   ques.setAttribute('class', 'promptQuestion animate__animated animate__backInRight')
   setTimeout(removeClasses, 1000)
+  chooseOne.setAttribute('class','yesBut animate__animated animate__bounce')
+  chooseTwo.setAttribute('class','noBut animate__animated animate__bounce')
 }
 
 function goHome(){
@@ -72,6 +78,8 @@ function goHome(){
   chooseTwo.setAttribute('hidden','true')
   result.setAttribute('class',' pageChoice animate__animated animate__backInLeft')
   ques.setAttribute('class', 'promptQuestion animate__animated animate__backInRight')
+  chooseOne.setAttribute('class','yesBut animate__animated animate__bounce')
+  chooseTwo.setAttribute('class','noBut animate__animated animate__bounce')
 }
 
 function fightDragon(){
@@ -84,6 +92,8 @@ function fightDragon(){
   result.setAttribute('class',' pageChoice animate__animated animate__backInLeft')
   ques.setAttribute('class', 'promptQuestion animate__animated animate__backInRight')
   setTimeout(removeClasses, 1000)
+  chooseOne.setAttribute('class','yesBut animate__animated animate__bounce')
+  chooseTwo.setAttribute('class','noBut animate__animated animate__bounce')
 }
 
 function vandal(){
@@ -96,6 +106,8 @@ function vandal(){
   result.setAttribute('class',' pageChoice animate__animated animate__backInLeft')
   ques.setAttribute('class', 'promptQuestion animate__animated animate__backInRight')
   setTimeout(removeClasses, 1000)
+  chooseOne.setAttribute('class','yesBut animate__animated animate__bounce')
+  chooseTwo.setAttribute('class','noBut animate__animated animate__bounce')
 }
 
 function defeatDragon(){

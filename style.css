@@ -22,12 +22,16 @@ h1 {
   height: auto;
   margin: auto;
   text-align: center;
+  border: 3px solid goldenrod;
+  border-radius: 20px;
+  padding: 50px;
 }
 
 .pageChoice { 
   grid-area: pageChoice; 
   margin-top: 10px;
   font-size: 1.5rem;
+  height: fit-content;
 }
 
 img { 
@@ -35,7 +39,7 @@ img {
   height: auto;
   width: 120%;
   margin-left: 42%;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 .promptQuestion { 
