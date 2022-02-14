@@ -17,6 +17,15 @@ function init(){
   chooseOne.textContent = `Drink`
   chooseTwo.textContent = `Go Home`
   pageNumber = 1
+  result.setAttribute('class',' pageChoice animate__animated animate__backInLeft')
+  ques.setAttribute('class', 'promptQuestion animate__animated animate__backInRight')
+  setTimeout(removeClasses, 1000)
+}
+
+
+function removeClasses(){
+  result.setAttribute('class','pageChoice')
+  ques.setAttribute('class','promptQuestion')
 }
 
 function directOne(){
@@ -50,6 +59,9 @@ function quest(){
   chooseOne.textContent = `Slay`
   chooseTwo.textContent = `Walk Away`
   pageNumber = 2
+  result.setAttribute('class',' pageChoice animate__animated animate__backInLeft')
+  ques.setAttribute('class', 'promptQuestion animate__animated animate__backInRight')
+  setTimeout(removeClasses, 1000)
 }
 
 function goHome(){
@@ -58,6 +70,8 @@ function goHome(){
   ques.innerHTML = `...but you'll always wonder what adventure could have been waiting inside`
   chooseOne.setAttribute('hidden','true')
   chooseTwo.setAttribute('hidden','true')
+  result.setAttribute('class',' pageChoice animate__animated animate__backInLeft')
+  ques.setAttribute('class', 'promptQuestion animate__animated animate__backInRight')
 }
 
 function fightDragon(){
@@ -67,6 +81,9 @@ function fightDragon(){
   chooseOne.innerHTML = `Spell`
   chooseTwo.innerHTML = `Sword`
   pageNumber = 4
+  result.setAttribute('class',' pageChoice animate__animated animate__backInLeft')
+  ques.setAttribute('class', 'promptQuestion animate__animated animate__backInRight')
+  setTimeout(removeClasses, 1000)
 }
 
 function vandal(){
@@ -76,6 +93,9 @@ function vandal(){
   chooseOne.innerHTML = `Fight`
   chooseTwo.innerHTML = `Flee`
   pageNumber = 5
+  result.setAttribute('class',' pageChoice animate__animated animate__backInLeft')
+  ques.setAttribute('class', 'promptQuestion animate__animated animate__backInRight')
+  setTimeout(removeClasses, 1000)
 }
 
 function defeatDragon(){
@@ -84,6 +104,8 @@ function defeatDragon(){
   ques.innerHTML = `You are victorious and glorious, the village will be praising your name for generations`
   chooseOne.setAttribute('hidden','true')
   chooseTwo.setAttribute('hidden','true')
+  result.setAttribute('class',' pageChoice animate__animated animate__backInLeft')
+  ques.setAttribute('class', 'promptQuestion animate__animated animate__backInRight')
 }
 
 function death(){
@@ -92,6 +114,8 @@ function death(){
   ques.innerHTML = `It looks like roasted mushrooms are on the menu tonight`
   chooseOne.setAttribute('hidden','true')
   chooseTwo.setAttribute('hidden','true')
+  result.setAttribute('class',' pageChoice animate__animated animate__backInLeft')
+  ques.setAttribute('class', 'promptQuestion animate__animated animate__backInRight')
 }
 
 function fightVandal(){
@@ -100,6 +124,8 @@ function fightVandal(){
   ques.innerHTML = `You loot their bodies and find enough gold to keep you fed until the next quest`
   chooseOne.setAttribute('hidden','true')
   chooseTwo.setAttribute('hidden','true')
+  result.setAttribute('class',' pageChoice animate__animated animate__backInLeft')
+  ques.setAttribute('class', 'promptQuestion animate__animated animate__backInRight')
 }
 
 function shame(){
@@ -108,4 +134,6 @@ function shame(){
   ques.innerHTML = `You'll forever carry with you the shame of knowing you are less brave than your ancestors`
   chooseOne.setAttribute('hidden','true')
   chooseTwo.setAttribute('hidden','true')
+  result.setAttribute('class',' pageChoice animate__animated animate__backInLeft')
+  ques.setAttribute('class', 'promptQuestion animate__animated animate__backInRight')
 }
