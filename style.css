@@ -83,7 +83,7 @@ img {
   .container {
     width: auto;
     height: 60vh;
-    grid-template-rows: 15% 1fr 10% 10%;
+    grid-template-rows: 15% 1fr 20% 10%;
   }
   h1 {
     font-size: 1.2rem;

@@ -103,6 +103,8 @@ function defeatDragon(){
   photo.innerHTML = `<img src="./assets/page7.gif" />`
   result.innerHTML = `With all the magic you can muster you bring forth a cold burst, freezing the dragon in a solid block of ice`
   ques.innerHTML = `You are victorious and glorious, the village will be praising your name for generations`
+  chooseOne.setAttribute('hidden','true')
+  chooseTwo.setAttribute('hidden','true')
   addClasses()
 }
 
@@ -119,6 +121,8 @@ function fightVandal(){
   photo.innerHTML = `<img src="./assets/page8.gif" />`
   result.innerHTML = `You pull out your magical sword of butt-whooping and knock the thieves out in one fell swoop`
   ques.innerHTML = `You loot their bodies and find enough gold to keep you fed until the next quest`
+  chooseOne.setAttribute('hidden','true')
+  chooseTwo.setAttribute('hidden','true')
   addClasses()
 }
 
