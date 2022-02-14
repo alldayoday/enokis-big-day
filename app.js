@@ -11,13 +11,6 @@ chooseTwo.addEventListener('click', directTwo)
 
 init()
 
-function removeClasses(){
-  result.setAttribute('class','pageChoice')
-  ques.setAttribute('class','promptQuestion')
-  chooseOne.setAttribute('class','yesBut')
-  chooseTwo.setAttribute('class','noBut')
-}
-
 function directOne(){
   if (pageNumber === 1){
     quest()
@@ -48,6 +41,13 @@ function addClasses(){
   setTimeout(removeClasses, 1000)
   chooseOne.setAttribute('class','yesBut animate__animated animate__bounce')
   chooseTwo.setAttribute('class','noBut animate__animated animate__bounce')
+}
+
+function removeClasses(){
+  result.setAttribute('class','pageChoice')
+  ques.setAttribute('class','promptQuestion')
+  chooseOne.setAttribute('class','yesBut')
+  chooseTwo.setAttribute('class','noBut')
 }
 
 function init(){
