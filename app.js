@@ -73,7 +73,7 @@ function quest(){
 function goHome(){
   photo.innerHTML = `<img src="./assets/page3.gif" />`
   result.innerHTML = `You head back to your home`
-  ques.innerHTML = `...but you'll always wonder what adventure could have been waiting inside`
+  ques.innerHTML = `...but you'll always wonder what adventure could have been waiting for you inside.`
   chooseOne.setAttribute('hidden','true')
   chooseTwo.setAttribute('hidden','true')
   addClasses()
@@ -81,7 +81,7 @@ function goHome(){
 
 function fightDragon(){
   photo.innerHTML = `<img src="./assets/page4.gif" />`
-  result.innerHTML = `You find the dragon in a field just outside of the village. You know you only have one chance to take him down`
+  result.innerHTML = `You find the dragon in a field just outside of the village. You know you only have one chance to take him down.`
   ques.innerHTML = `Will you try to fight him with your sword or cast a spell?`
   chooseOne.innerHTML = `Spell`
   chooseTwo.innerHTML = `Sword`
@@ -91,7 +91,7 @@ function fightDragon(){
 
 function vandal(){
   photo.innerHTML = `<img src="./assets/page5.gif" />`
-  result.innerHTML = `You exit the tavern ready to head back home when three warlocks jump out at you from behind a cabin and demand you give them everything in your pockets`
+  result.innerHTML = `You exit the tavern ready to head back home when three warlocks jump out at you from behind a cabin and demand you give them everything in your pockets.`
   ques.innerHTML = `Do you fight the thieves or flee?`
   chooseOne.innerHTML = `Fight`
   chooseTwo.innerHTML = `Flee`
@@ -101,8 +101,8 @@ function vandal(){
 
 function defeatDragon(){
   photo.innerHTML = `<img src="./assets/page7.gif" />`
-  result.innerHTML = `With all the magic you can muster you bring forth a cold burst, freezing the dragon in a solid block of ice`
-  ques.innerHTML = `You are victorious and glorious, the village will be praising your name for generations`
+  result.innerHTML = `With all the magic you can muster you bring forth a cold burst, freezing the dragon in a solid block of ice.`
+  ques.innerHTML = `You are victorious and glorious, the village will be praising your name for generations!`
   chooseOne.setAttribute('hidden','true')
   chooseTwo.setAttribute('hidden','true')
   addClasses()
@@ -110,8 +110,8 @@ function defeatDragon(){
 
 function death(){
   photo.innerHTML = `<img src="./assets/page6.gif" />`
-  result.innerHTML = `You approach the dragon, wielding your mighty and magical blade. You find yourself in close range before you notice the dragon's fire breath engulf you in flame`
-  ques.innerHTML = `It looks like roasted mushrooms are on the menu tonight`
+  result.innerHTML = `You approach the dragon, wielding your mighty and magical blade. You find yourself in close range before you notice the dragon's fire breath engulf you in flame.`
+  ques.innerHTML = `It looks like roasted mushrooms are on the menu tonight!`
   chooseOne.setAttribute('hidden','true')
   chooseTwo.setAttribute('hidden','true')
   addClasses()
@@ -119,8 +119,8 @@ function death(){
 
 function fightVandal(){
   photo.innerHTML = `<img src="./assets/page8.gif" />`
-  result.innerHTML = `You pull out your magical sword of butt-whooping and knock the thieves out in one fell swoop`
-  ques.innerHTML = `You loot their bodies and find enough gold to keep you fed until the next quest`
+  result.innerHTML = `You pull out your magical sword of butt-whooping and knock the thieves out in one fell swoop.`
+  ques.innerHTML = `You loot their bodies and find enough gold to keep you fed until the next quest!`
   chooseOne.setAttribute('hidden','true')
   chooseTwo.setAttribute('hidden','true')
   addClasses()
