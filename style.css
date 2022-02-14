@@ -1,6 +1,7 @@
 body {
   background-color: #240046;
   color: aliceblue;
+  font-family: 'Inconsolata', monospace;
 }
 h1 {
   text-align: center;
@@ -31,7 +32,8 @@ h1 {
   grid-area: pageChoice; 
   margin-top: 10px;
   font-size: 1.5rem;
-  height: fit-content;
+  height: 150px;
+  width: auto;
 }
 
 img { 
@@ -39,7 +41,6 @@ img {
   height: auto;
   width: 120%;
   margin-left: 42%;
-  /* margin-top: 20px; */
 }
 
 .promptQuestion { 
@@ -54,6 +55,7 @@ img {
   justify-self:right;
   font-size: 1rem;
   margin: 0;
+  font-family: 'Inconsolata', monospace;
 }
 
 .noBut { 
@@ -62,4 +64,5 @@ img {
   justify-self:left;
   font-size: 1rem;
   margin: 0;
+  font-family: 'Inconsolata', monospace;
 }
