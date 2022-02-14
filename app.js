@@ -19,7 +19,6 @@ function init(){
   pageNumber = 1
 }
 
-
 function directOne(){
   if (pageNumber === 1){
     quest()

@@ -1,6 +1,14 @@
-.container {  display: grid;
+body {
+  background-color: #240046;
+  color: aliceblue;
+}
+h1 {
+  text-align: center;
+}
+.container {  
+  display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 10% 1fr 15% 10%;
+  grid-template-rows: 15% 1fr 10% 10%;
   grid-auto-columns: 1fr;
   gap: 10px 10px;
   grid-auto-flow: row;
@@ -10,19 +18,35 @@
     "promptQuestion promptQuestion"
     "yesBut noBut";
   width: 70%;
-  height: 80%;
+  height: 50vh;
+  margin: auto;
+  text-align: center;
 }
 
-.pageChoice { grid-area: pageChoice; }
+.pageChoice { 
+  grid-area: pageChoice; 
+  margin-top: 10px;
+}
 
 img { 
   grid-area: img; 
-  width: 200%;
   height: auto;
+  width: 170%;
+  margin-left: 20%;
 }
 
-.promptQuestion { grid-area: promptQuestion; }
+.promptQuestion { 
+  grid-area: promptQuestion; 
+}
 
-.yesBut { grid-area: yesBut; }
+.yesBut { 
+  grid-area: yesBut; 
+  width: 100px;
+  justify-self:right;
+}
 
-.noBut { grid-area: noBut; }
+.noBut { 
+  grid-area: noBut; 
+  width: 100px;
+  justify-self:left;
+}
