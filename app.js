@@ -73,5 +73,8 @@ function fightDragon(){
 function vandal(){
   photo.innerHTML = `<img src="./assets/page5.gif" />`
   result.innerHTML = `You exit the tavern ready to head back home when three warlocks jump out at you from behind a cabin`
-  ques.innerHTML = ``
+  ques.innerHTML = `Do you fight the thieves or flee?`
+  chooseOne.innerHTML = `Fight`
+  chooseTwo.innerHTML = `Flee`
+  pageNumber = 5
 }
