@@ -1,0 +1,28 @@
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10% 1fr 15% 10%;
+  grid-auto-columns: 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "pageChoice pageChoice"
+    "img img"
+    "promptQuestion promptQuestion"
+    "yesBut noBut";
+  width: 70%;
+  height: 80%;
+}
+
+.pageChoice { grid-area: pageChoice; }
+
+img { 
+  grid-area: img; 
+  width: 200%;
+  height: auto;
+}
+
+.promptQuestion { grid-area: promptQuestion; }
+
+.yesBut { grid-area: yesBut; }
+
+.noBut { grid-area: noBut; }
