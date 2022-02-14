@@ -78,3 +78,20 @@ function vandal(){
   chooseTwo.innerHTML = `Flee`
   pageNumber = 5
 }
+
+function defeatDragon(){
+  photo.innerHTML = `<img src="./assets/page7.gif" />`
+  result.innerHTML = `With all the magic you can muster you bring forth a cold burst, freezing the dragon in a solid block of ice`
+  ques.innerHTML = `You are victorious and glorious, the village will be praising your name for generations`
+  chooseOne.setAttribute('hidden','true')
+  chooseTwo.setAttribute('hidden','true')
+}
+
+function death(){
+  photo.innerHTML = `<img src="./assets/page6.gif" />`
+  result.innerHTML = `You approach the dragon, wielding you mighty and magical blade. You find yourself in close range before you notice the dragon's fire breath engulf you in flame`
+  ques.innerHTML = `It looks like roasted mushrooms are on the menu tonight`
+  chooseOne.setAttribute('hidden','true')
+  chooseTwo.setAttribute('hidden','true')
+}
+
