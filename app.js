@@ -60,3 +60,18 @@ function goHome(){
   chooseOne.setAttribute('hidden','true')
   chooseTwo.setAttribute('hidden','true')
 }
+
+function fightDragon(){
+  photo.innerHTML = `<img src="./assets/page4.gif" />`
+  result.innerHTML = `You find the dragon in a field just outside of the village. You know you only have one chance to take him down`
+  ques.innerHTML = `Will you try to fight him with your sword or cast a spell?`
+  chooseOne.innerHTML = `Spell`
+  chooseTwo.innerHTML = `Sword`
+  pageNumber = 4
+}
+
+function vandal(){
+  photo.innerHTML = `<img src="./assets/page5.gif" />`
+  result.innerHTML = `You exit the tavern ready to head back home when three warlocks jump out at you from behind a cabin`
+  ques.innerHTML = ``
+}
