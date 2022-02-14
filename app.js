@@ -54,5 +54,9 @@ function quest(){
 }
 
 function goHome(){
-  console.log('home')
+  photo.innerHTML = `<img src="./assets/page3.gif" />`
+  result.innerHTML = `You head back to your home`
+  ques.innerHTML = `...but you'll always wonder what adventure could have been waiting inside`
+  chooseOne.setAttribute('hidden','true')
+  chooseTwo.setAttribute('hidden','true')
 }
