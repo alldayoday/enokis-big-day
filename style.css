@@ -7,8 +7,7 @@ body {
 }
 h1 {
   text-align: center;
-  font-size: 1.2rem;
-  border: 2px dotted goldenrod;
+  font-size: 2rem;
   width: fit-content;
   margin: auto;
 }
@@ -24,7 +23,7 @@ h1 {
     "img img"
     "promptQuestion promptQuestion"
     "yesBut noBut";
-  width: 80%;
+  width: 70%;
   height: auto;
   margin: auto;
   text-align: center;

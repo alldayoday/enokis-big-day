@@ -10,20 +10,6 @@ chooseOne.addEventListener('click', directOne)
 chooseTwo.addEventListener('click', directTwo)
 
 init()
-function init(){
-  photo.innerHTML = `<img src="./assets/page1.gif" />`
-  result.innerHTML = `As you're walking through the woods you notice that the sun is beginning to set. You come across a tavern tucked away between the trees`
-  ques.innerHTML = `Do you stop for a drink or head home before dark?`
-  chooseOne.textContent = `Drink`
-  chooseTwo.textContent = `Go Home`
-  pageNumber = 1
-  result.setAttribute('class',' pageChoice animate__animated animate__backInLeft')
-  ques.setAttribute('class', 'promptQuestion animate__animated animate__backInRight')
-  setTimeout(removeClasses, 1000)
-  chooseOne.setAttribute('class','yesBut animate__animated animate__bounce')
-  chooseTwo.setAttribute('class','noBut animate__animated animate__bounce')
-}
-
 
 function removeClasses(){
   result.setAttribute('class','pageChoice')
@@ -56,18 +42,32 @@ function directTwo(){
   }
 }
 
-function quest(){
-  photo.innerHTML = `<img src="./assets/page2.gif" />`
-  result.innerHTML = `You enter the bar and see a young witch sweeping the floor. She approaches you and tells you of a mischevious dragon terrorizing her village`
-  ques.innerHTML = `Do you accept the noble quest to slay the dragon?`
-  chooseOne.textContent = `Slay`
-  chooseTwo.textContent = `Walk Away`
-  pageNumber = 2
+function addClasses(){
   result.setAttribute('class',' pageChoice animate__animated animate__backInLeft')
   ques.setAttribute('class', 'promptQuestion animate__animated animate__backInRight')
   setTimeout(removeClasses, 1000)
   chooseOne.setAttribute('class','yesBut animate__animated animate__bounce')
   chooseTwo.setAttribute('class','noBut animate__animated animate__bounce')
+}
+
+function init(){
+  photo.innerHTML = `<img src="./assets/page1.gif" />`
+  result.innerHTML = `As you're walking through the woods you notice that the sun is beginning to set. You come across a tavern tucked away between the trees.`
+  ques.innerHTML = `Do you stop for a drink or head home before dark?`
+  chooseOne.textContent = `Drink`
+  chooseTwo.textContent = `Go Home`
+  pageNumber = 1
+  addClasses()
+}
+
+function quest(){
+  photo.innerHTML = `<img src="./assets/page2.gif" />`
+  result.innerHTML = `You enter the bar and see a young witch sweeping the floor. She approaches you and tells you of a mischevious dragon terrorizing her village. She begs for your help to defeat the dragon.`
+  ques.innerHTML = `Do you accept the noble quest to slay the dragon?`
+  chooseOne.textContent = `Slay`
+  chooseTwo.textContent = `Walk Away`
+  pageNumber = 2
+  addClasses()
 }
 
 function goHome(){
@@ -76,10 +76,7 @@ function goHome(){
   ques.innerHTML = `...but you'll always wonder what adventure could have been waiting inside`
   chooseOne.setAttribute('hidden','true')
   chooseTwo.setAttribute('hidden','true')
-  result.setAttribute('class',' pageChoice animate__animated animate__backInLeft')
-  ques.setAttribute('class', 'promptQuestion animate__animated animate__backInRight')
-  chooseOne.setAttribute('class','yesBut animate__animated animate__bounce')
-  chooseTwo.setAttribute('class','noBut animate__animated animate__bounce')
+  addClasses()
 }
 
 function fightDragon(){
@@ -89,11 +86,7 @@ function fightDragon(){
   chooseOne.innerHTML = `Spell`
   chooseTwo.innerHTML = `Sword`
   pageNumber = 4
-  result.setAttribute('class',' pageChoice animate__animated animate__backInLeft')
-  ques.setAttribute('class', 'promptQuestion animate__animated animate__backInRight')
-  setTimeout(removeClasses, 1000)
-  chooseOne.setAttribute('class','yesBut animate__animated animate__bounce')
-  chooseTwo.setAttribute('class','noBut animate__animated animate__bounce')
+  addClasses()
 }
 
 function vandal(){
@@ -103,21 +96,14 @@ function vandal(){
   chooseOne.innerHTML = `Fight`
   chooseTwo.innerHTML = `Flee`
   pageNumber = 5
-  result.setAttribute('class',' pageChoice animate__animated animate__backInLeft')
-  ques.setAttribute('class', 'promptQuestion animate__animated animate__backInRight')
-  setTimeout(removeClasses, 1000)
-  chooseOne.setAttribute('class','yesBut animate__animated animate__bounce')
-  chooseTwo.setAttribute('class','noBut animate__animated animate__bounce')
+  addClasses()
 }
 
 function defeatDragon(){
   photo.innerHTML = `<img src="./assets/page7.gif" />`
   result.innerHTML = `With all the magic you can muster you bring forth a cold burst, freezing the dragon in a solid block of ice`
   ques.innerHTML = `You are victorious and glorious, the village will be praising your name for generations`
-  chooseOne.setAttribute('hidden','true')
-  chooseTwo.setAttribute('hidden','true')
-  result.setAttribute('class',' pageChoice animate__animated animate__backInLeft')
-  ques.setAttribute('class', 'promptQuestion animate__animated animate__backInRight')
+  addClasses()
 }
 
 function death(){
@@ -126,18 +112,14 @@ function death(){
   ques.innerHTML = `It looks like roasted mushrooms are on the menu tonight`
   chooseOne.setAttribute('hidden','true')
   chooseTwo.setAttribute('hidden','true')
-  result.setAttribute('class',' pageChoice animate__animated animate__backInLeft')
-  ques.setAttribute('class', 'promptQuestion animate__animated animate__backInRight')
+  addClasses()
 }
 
 function fightVandal(){
   photo.innerHTML = `<img src="./assets/page8.gif" />`
   result.innerHTML = `You pull out your magical sword of butt-whooping and knock the thieves out in one fell swoop`
   ques.innerHTML = `You loot their bodies and find enough gold to keep you fed until the next quest`
-  chooseOne.setAttribute('hidden','true')
-  chooseTwo.setAttribute('hidden','true')
-  result.setAttribute('class',' pageChoice animate__animated animate__backInLeft')
-  ques.setAttribute('class', 'promptQuestion animate__animated animate__backInRight')
+  addClasses()
 }
 
 function shame(){
@@ -146,6 +128,5 @@ function shame(){
   ques.innerHTML = `You'll forever carry with you the shame of knowing you are less brave than your ancestors`
   chooseOne.setAttribute('hidden','true')
   chooseTwo.setAttribute('hidden','true')
-  result.setAttribute('class',' pageChoice animate__animated animate__backInLeft')
-  ques.setAttribute('class', 'promptQuestion animate__animated animate__backInRight')
+  addClasses()
 }
