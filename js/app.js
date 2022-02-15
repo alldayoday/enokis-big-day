@@ -6,6 +6,9 @@ const chooseTwo = document.querySelector('#two')
 const backgroundMusic = new Audio ('../assets/background.mp3')
 const fire = new Audio ('../assets/fire.wav')
 const aww = new Audio ('../assets/aww.wav')
+const tavern = new Audio ('../assets/tavern.wav')
+const sword = new Audio('../assets/sword.mp3')
+const ice = new Audio('../assets/ice.wav')
 
 
 let pageNumber
@@ -73,6 +76,8 @@ function quest(){
   chooseTwo.textContent = `Walk Away`
   pageNumber = 2
   addClasses()
+  tavern.volume = .10
+  tavern.play()
   backgroundMusic.volume = .10
   backgroundMusic.play()
 }
@@ -96,6 +101,7 @@ function fightDragon(){
   chooseTwo.innerHTML = `Sword`
   pageNumber = 4
   addClasses()
+  tavern.pause()
 }
 
 function vandal(){
@@ -106,6 +112,7 @@ function vandal(){
   chooseTwo.innerHTML = `Flee`
   pageNumber = 5
   addClasses()
+  tavern.pause()
 }
 
 function defeatDragon(){
@@ -115,6 +122,9 @@ function defeatDragon(){
   chooseOne.setAttribute('hidden','true')
   chooseTwo.setAttribute('hidden','true')
   addClasses()
+  ice.volume = .1
+  ice.play()
+  confetti.start(3000)
 }
 
 function death(){
@@ -135,6 +145,8 @@ function fightVandal(){
   chooseOne.setAttribute('hidden','true')
   chooseTwo.setAttribute('hidden','true')
   addClasses()
+  sword.volume = .2
+  sword.play()
 }
 
 function shame(){
