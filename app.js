@@ -3,11 +3,16 @@ const result = document.querySelector('#pageResult')
 const ques = document.querySelector('#question')
 const chooseOne = document.querySelector('#one')
 const chooseTwo = document.querySelector('#two')
+const backgroundMusic = new Audio ('../assets/background.mp3')
+const fire = new Audio ('../assets/fire.wav')
+const aww = new Audio ('../assets/aww.wav')
+
 
 let pageNumber
 
 chooseOne.addEventListener('click', directOne)
 chooseTwo.addEventListener('click', directTwo)
+
 
 init()
 
@@ -68,6 +73,8 @@ function quest(){
   chooseTwo.textContent = `Walk Away`
   pageNumber = 2
   addClasses()
+  backgroundMusic.volume = .10
+  backgroundMusic.play()
 }
 
 function goHome(){
@@ -77,6 +84,8 @@ function goHome(){
   chooseOne.setAttribute('hidden','true')
   chooseTwo.setAttribute('hidden','true')
   addClasses()
+  aww.volume = .1
+  aww.play()
 }
 
 function fightDragon(){
@@ -115,6 +124,8 @@ function death(){
   chooseOne.setAttribute('hidden','true')
   chooseTwo.setAttribute('hidden','true')
   addClasses()
+  fire.volume = .50
+  fire.play()
 }
 
 function fightVandal(){
@@ -133,6 +144,9 @@ function shame(){
   chooseOne.setAttribute('hidden','true')
   chooseTwo.setAttribute('hidden','true')
   addClasses()
+  backgroundMusic.pause()
+  aww.volume = .1
+  aww.play()
 }
 
 
