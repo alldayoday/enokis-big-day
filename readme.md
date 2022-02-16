@@ -16,7 +16,7 @@ Project created with
 This is one party member of 6 from my game, in the future I would love to give an option to play as any of my party's characters and each of them would have their own little adventure.
 
 ## Game Images
-![Start Screen](https://github.com/alldayoday/enokis-big-day/raw/main/assets/SS1.png)
+![Start Screen](https://github.com/alldayoday/enokis-big-day/raw/main/assets/ss1.png)
 ![Warlocks Outside](https://github.com/alldayoday/enokis-big-day/raw/main/assets/SS2.png)
 ![Fight the Dragon](https://github.com/alldayoday/enokis-big-day/raw/main/assets/SS3.png)
 
