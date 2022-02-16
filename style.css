@@ -1,7 +1,7 @@
 body {
   background-color: #240046;
   background-image: url(./assets/background.gif);
-  background-repeat: no-repeat;
+  background-size: cover;
   color: aliceblue;
   font-family: 'Inconsolata', monospace;
 }
@@ -11,10 +11,11 @@ h1 {
   width: fit-content;
   margin: auto;
 }
+
 .container {  
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 15% 1fr 10% 10%;
+  grid-template-rows: 15% 1fr 16% 10%;
   grid-auto-columns: 1fr;
   gap: 10px 10px;
   grid-auto-flow: row;
@@ -52,7 +53,7 @@ img {
 .promptQuestion { 
   grid-area: promptQuestion; 
   font-size: 1.5rem;
-  margin: 0;
+  margin-top: 0;
 }
 
 .yesBut { 
