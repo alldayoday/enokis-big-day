@@ -93,6 +93,7 @@ img {
   body {
     border: 2px solid goldenrod;
     border-radius: 10px;
+    background-image: url(./assets/backgroundphone.gif)
   }
   .pageChoice {
     font-size: 1rem;
