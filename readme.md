@@ -4,7 +4,7 @@
 
 ## Game Deployment
 * https://enokis-big-day.surge.sh/
-* Game loads in browser, no download necessary. Simply make the choices you wish too and let the game tell you where those choices will lead you.
+* Game loads in browser, no download necessary. Simply make the choices you wish to and let the game tell you where those choices will lead you.
 
 ## Technologies Used:
 Project created with
@@ -16,7 +16,7 @@ Project created with
 This is one party member of 6 from my game, in the future I would love to give an option to play as any of my party's characters and each of them would have their own little adventure.
 
 ## Game Images
-![SS1](https://github.com/alldayoday/enokis-big-day/raw/main/../../../../../../assets/ss1.png)
+![SS1](https://github.com/alldayoday/enokis-big-day/raw/main/assets/ss1.png)
 
 
 ## Special Thanks
