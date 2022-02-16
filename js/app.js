@@ -3,12 +3,12 @@ const result = document.querySelector('#pageResult')
 const ques = document.querySelector('#question')
 const chooseOne = document.querySelector('#one')
 const chooseTwo = document.querySelector('#two')
-const backgroundMusic = new Audio('https://github.com/alldayoday/enokis-big-day/raw/main/assets/background.mp3')
-const fire = new Audio('https://github.com/alldayoday/enokis-big-day/raw/main/assets/fire.wav')
-const aww = new Audio('https://github.com/alldayoday/enokis-big-day/raw/main/assets/aww.wav')
-const tavern = new Audio('https://github.com/alldayoday/enokis-big-day/raw/main/assetstavern.wav')
-const sword = new Audio('https://github.com/alldayoday/enokis-big-day/raw/main/assetsassets/sword.mp3')
-const ice = new Audio('https://github.com/alldayoday/enokis-big-day/raw/main/assetsassets/ice.wav')
+const backgroundMusic = new Audio('../assets/background.mp3')
+const fire = new Audio('../assets/fire.wav')
+const aww = new Audio('../assets/aww.wav')
+const tavern = new Audio('../assets/tavern.wav')
+const sword = new Audio('../assets/sword.mp3')
+const ice = new Audio('../assets/ice.wav')
 
 
 let pageNumber
