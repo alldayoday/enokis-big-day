@@ -122,7 +122,7 @@ function defeatDragon() {
   chooseOne.setAttribute('hidden', 'true')
   chooseTwo.setAttribute('hidden', 'true')
   addClasses()
-  ice.volume = .1
+  ice.volume = .2
   ice.play()
   confetti.start(3000)
 }
