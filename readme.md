@@ -22,5 +22,5 @@ This is one party member of 6 from my game, in the future I would love to give a
 ## Special Thanks
 * All image designs created on Canva
 * Animations from Animate.css
-* Inspiration from a homebrew character Enoki created by Renee S.
+* Inspiration from a homebrew character Enoki created by Renee
 * Sound effects from https://freesound.org/ 
