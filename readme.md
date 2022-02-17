@@ -1,6 +1,6 @@
 # Enoki's Big Day
 
-### This project is inspired by one of my Dungeons and Dragons player's characters who is a little mushroom person named Enoki. I thought it would be fun and silly to sort of walk through a day in the life of a Leshy with choices. As in all DnD games, if you choose not to follow the main adventure storyline it does NOT mean that the adventure is over, it simply means you have chosen a different path.
+### This choose your own adventure game is inspired by one of my Dungeons and Dragons player's characters who is a little mushroom person named Enoki. I thought it would be fun and silly to sort of walk through a day in the life of a Leshy with choices. As in all DnD games, if you choose not to follow the main adventure storyline it does NOT mean that the adventure is over, it simply means you have chosen a different path.
 
 ## Game Deployment
 [Play](https://enokis-big-day.surge.sh/) here!
