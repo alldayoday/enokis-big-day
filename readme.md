@@ -3,14 +3,14 @@
 ### This project is inspired by one of my Dungeons and Dragons player's characters who is a little mushroom person named Enoki. I thought it would be fun and silly to sort of walk through a day in the life of a Leeshy with choices. As in all DnD games, if you choose not to follow the main adventure storyline it does NOT mean that the adventure is over, it simply means you have chosen a different path.
 
 ## Game Deployment
-* https://enokis-big-day.surge.sh/
-* Game loads in browser, no download necessary. Simply make the choices you wish to and let the game tell you where those choices will lead you.
+[Play](https://enokis-big-day.surge.sh/) here!
+
+Game loads in browser, no download necessary. Simply make the choices you wish to and let the game tell you where those choices will lead you.
 
 ## Technologies Used:
-Project created with
-* HTML
-* CSS
-* JavaScript
+![HTML](https://img.shields.io/badge/-HTML-green)
+![CSS](https://img.shields.io/badge/-CSS-blueviolet)
+![JAVASCRIPT](https://img.shields.io/badge/-Javascript-yellow)
 
 ## Future Enchancements 
 This is one party member of 6 from my game, in the future I would love to give an option to play as any of my party's characters and each of them would have their own little adventure.
