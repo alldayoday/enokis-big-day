@@ -24,3 +24,4 @@ This is one party member of 6 from my game, in the future I would love to give a
 * Animations from Animate.css
 * Inspiration from a homebrew character Enoki created by Renee Molin
 * Sound effects from https://freesound.org/ 
+* Confetti from https://github.com/mathusummut/
