@@ -1,24 +1,25 @@
+// defining each part of the page that will change based on choice
 const photo = document.querySelector('#photo')
 const result = document.querySelector('#pageResult')
 const ques = document.querySelector('#question')
 const chooseOne = document.querySelector('#one')
 const chooseTwo = document.querySelector('#two')
+//defining audios 
 const backgroundMusic = new Audio('../assets/background.mp3')
 const fire = new Audio('../assets/fire.wav')
 const aww = new Audio('../assets/aww.wav')
 const tavern = new Audio('../assets/tavern.wav')
 const sword = new Audio('../assets/sword.mp3')
 const ice = new Audio('../assets/ice.wav')
-
-
+//defining state
 let pageNumber
-
+//button tracking
 chooseOne.addEventListener('click', directOne)
 chooseTwo.addEventListener('click', directTwo)
-
-
+//run initial setup
 init()
-
+//page turning functions:
+//sets up each page based on where state was when the button was clicked, allows for more pages to be written in for futher expansion
 function directOne() {
   if (pageNumber === 1) {
     quest()
@@ -43,6 +44,7 @@ function directTwo() {
   }
 }
 
+//this function runs the animations for the page, the text moving in from the sides and the buttons bouncing. it also times out the next function, to remove those classes so they can be applied again on the next choice.
 function addClasses() {
   result.setAttribute('class', ' pageChoice animate__animated animate__backInLeft')
   ques.setAttribute('class', 'promptQuestion animate__animated animate__backInRight')
@@ -50,14 +52,14 @@ function addClasses() {
   chooseOne.setAttribute('class', 'yesBut animate__animated animate__bounce')
   chooseTwo.setAttribute('class', 'noBut animate__animated animate__bounce')
 }
-
+//removing classes (set in timeout from addClasses)
 function removeClasses() {
   result.setAttribute('class', 'pageChoice')
   ques.setAttribute('class', 'promptQuestion')
   chooseOne.setAttribute('class', 'yesBut')
   chooseTwo.setAttribute('class', 'noBut')
 }
-
+//initial page setup
 function init() {
   photo.innerHTML = `<img src="./assets/page1.gif" />`
   result.innerHTML = `As you're walking through the woods you notice that the sun is beginning to set. You come across a tavern tucked away between the trees.`
@@ -67,6 +69,9 @@ function init() {
   pageNumber = 1
   addClasses()
 }
+
+
+//these are story element functions, each represents a different piece of the adventure. Each sets the photo, the two pieces of text, the button text, the page number for managing state, runs the addClasses function for animations, and includes any sound effects used for the page. If the page ends the adventure route, it also hides the button from the page, and if the run was successful, the function calls confetti for celebration.
 
 function quest() {
   photo.innerHTML = `<img src="./assets/page2.gif" />`
@@ -162,3 +167,11 @@ function shame() {
 }
 
 
+function vandal() {
+  result.innerHTML = `You exit the tavern ready to head back home when three warlocks jump out at you from behind a cabin and demand you give them everything in your pockets.`
+  ques.innerHTML = `Do you fight the thieves or flee?`
+  chooseOne.innerHTML = `Fight`
+  chooseTwo.innerHTML = `Flee`
+  pageNumber = 5
+  addClasses()
+}
